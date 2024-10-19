@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o header */
+header {
+    background-color: #a2e067; /* cor de fundo semelhante à da imagem */
+    padding: 10px 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoVienna img {
+    width: 60px; /* ajuste de tamanho da logo */
+    border-radius: 50%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; /* cor branca no menu */
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #00421c; /* cor ao passar o mouse */
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Ajustes gerais do conteúdo principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro {
+    width: 50%;
+    text-align: left;
+}
+
+h1 {
+    color: #37a608;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #37a608;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #2e8604; /* efeito hover */
+}
+
+.image-section {
+    width: 40%;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-section p {
+    background-color: #a2e067;
+    color: #00421c;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+.section-text {
+    padding: 0 20px;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: #37a608;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Ajustes para o rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Media Queries para responsividade */
+
+/* Tablets e dispositivos com largura até 768px */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        justify-content: space-between; /* Mantém lado a lado */
+    }
+
+    .nav-list ul {
+        flex-wrap: wrap; /* Permite que os itens de navegação ajustem se necessário */
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .intro, .image-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro h1, .intro p {
+        text-align: center;
+    }
+
+    .image-section {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Smartphones e dispositivos menores até 480px */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logoVienna img {
+        width: 40px;
+    }
+
+    .nav-bar {
+        justify-content: space-between; /* Mantém os itens lado a lado */
+    }
+
+    .nav-list ul {
+        flex-wrap: nowrap; /* Evita que os itens de navegação fiquem abaixo um do outro */
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+
+    .image-section p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer p, .footer-links {
+        font-size: 14px;
+    }
+}
